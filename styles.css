@@ -1,0 +1,109 @@
+body {
+    background-color: aquamarine;
+}
+
+#divPrueba {
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "cuerpo"
+    "mascuerpo"
+    "cuerpo3"
+    "encuesta"
+    "pie"
+    ;
+    row-gap: 12px;
+    height: 100vh;
+    
+}
+
+h1 {
+    grid-area: cabeza;
+border: 1px solid red;
+}
+
+
+.di1 {
+    grid-area: cuerpo;
+    border: 5px solid blue;
+}
+
+.di2 {
+
+    grid-area: mascuerpo;
+
+    border: 3px solid orange;
+}
+
+.di23 {
+    grid-area: cuerpo3;
+    border: 14px solid black;
+}
+
+.di4 {
+    grid-area: encuesta;
+    border: 12px solid green;
+
+}
+
+footer {
+    grid-area: pie;
+    border: 15px dotted red;
+}
+
+@media (min-width: 300px) and (max-width: 780px) {
+    
+#divPrueba {
+    display:grid;
+grid-template-areas: 
+"cabeza cabeza cabeza"
+"cuerpo cuerpo mascuerpo"
+"cuerpo cuerpo mascuerpo"
+"cuerpo3 cuerpo3 mascuerpo"
+"encuesta encuesta mascuerpo"
+"pie pie mascuerpo";
+
+row-gap: 12px;
+column-gap: 12px;
+height: 100vh;
+margin: 0;
+grid-template-columns: 1fr auto 1fr;
+grid-template-rows: 25% auto auto auto auto 20%;
+}
+
+h1 {
+    grid-area: cabeza;
+    border: 12px solid green;
+    background-color: brown;
+    padding: 50px;
+}
+
+.di2 {
+    grid-area: cuerpo;
+    border: 12px solid green;
+    background-color: brown;
+    max-width: 85vw;
+    max-height: 50vh;
+}
+
+.di23 {
+    grid-area: mascuerpo;
+    border: 12px solid green;
+    background-color: brown;
+    margin-right: 5px;
+
+}
+
+.di4 {
+    grid-area: encuesta;
+    border: 12px solid green;
+    background-color: brown;
+}
+
+footer {
+    grid-area: pie;
+    border: 12px solid green;
+    background-color: brown;
+}
+
+}
