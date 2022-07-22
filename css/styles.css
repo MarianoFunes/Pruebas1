@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: blue;
+}
+
+
+
+nav li {
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+ul{
+    display: flex;
+    gap: 6px;
+}
+
+@media (max-width: 576px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
